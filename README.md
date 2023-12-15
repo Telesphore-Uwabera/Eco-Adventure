@@ -87,4 +87,4 @@ The Eco-Adventure Tourism Website aims to create an immersive experience, promot
 - Magot Garang
 
 
-Here is the link to [Eco-Adventure](https://uwaberatelesphore.netlify.app/)
+Here is the link to [Eco-Adventure](https://telesphore-uwabera.github.io/Eco-Adventure/)
