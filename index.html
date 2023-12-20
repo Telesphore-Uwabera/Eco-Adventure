@@ -134,7 +134,8 @@
     </section>
     <div id="booking-form" class="hidden">
       <h3>Booking Form</h3>
-      <form id="booking-form-submit" name="submit-to-google-sheet">
+      <form name="booking-form-submit" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="booking-form-submit" />
         <label for="services" name="services" required>Select Service:</label>
         <select id="services" name="services" required>
           <option value="Cao Grande Peak (668 m) - $1000">Cao Grande Peak (668 m) - $850</option>
@@ -309,10 +310,14 @@
     </section>
 
     <!-- contact section -->
-    <section id="contact">
+     <section id="contact">
       <h2>Contact Us</h2>
       <div class="query-form">
-        <form class="query-form" action="#" method="post" name="submit-to-google-sheets">
+        <form name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact-form" />
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required />
+          </div>
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="Name" required />
@@ -323,7 +328,6 @@
           </div>
           <div class="form-group">
             <label for="query">Query</label>
-            <!-- <textarea id="query" name="Query" required></textarea> -->
             <textarea id="query" name="Query" rows="1" style="height: 30px;" oninput="adjustTextAreaHeight()"></textarea>
           </div>
           <button type="submit" class="submit-btn" onclick="sendForm()">Submit</button>
